@@ -1,0 +1,295 @@
+
+		{
+			"name": "addQueryInforamtion",
+			"item": [
+				{
+					"name": "add information type",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"infoType\":\"link\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5656/infotype",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5656",
+							"path": [
+								"infotype"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get information Type",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"infoType\":\"text\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5656/infotype",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5656",
+							"path": [
+								"infotype"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get information Type By ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"infoType\":\"text\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5656/infotype/646ddf2e2f4f449480e133ad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5656",
+							"path": [
+								"infotype",
+								"646ddf2e2f4f449480e133ad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add information",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDZmNTdlNWMwYTQ0NGM5ZTQxOTNhZjUiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODU0NDA0NDgsImV4cCI6MTY4NTUyNjg0OH0.xGJEEeciY16MYDUb2fLOdsrD7Q8Rl0DbdxUTsqIeNIg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"infoType\":\"646ddf1f2f4f449480e133ab\",\r\n    \"question\": \"hello sir\",\r\n    \"infoTypeId\":{\r\n        \"_id\": \"646ddf1f2f4f449480e133ab\",\r\n        \"infoType\": \"button\",\r\n        \"__v\": 0\r\n    },\r\n    \"answer\":{\r\n        \"text\":\"\",\r\n        \"link\":\"\",\r\n        \"filename\":\"\"\r\n    },\r\n \"buttons\":{\r\n        \"responsetext\":\"mera name\" ,\r\n        \"buttonslist\": [\r\n            {\r\n                \"title\":\"list one\"\r\n            },\r\n             {\r\n                \"title\":\"list two\"\r\n            }\r\n        ]\r\n    },\r\n    \"list\":{\r\n        \"responsetext\":\"\" ,\r\n        \"buttonslist\": [\r\n            {\r\n                \"title\":\"\",\r\n                \"description\":\"\"\r\n            },\r\n             {\r\n                \"title\":\"\",\r\n                \"description\":\"\"\r\n            }\r\n        ]\r\n    }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5656/addinfo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5656",
+							"path": [
+								"addinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add information update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDZmNTdlNWMwYTQ0NGM5ZTQxOTNhZjUiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODU0NDA0NDgsImV4cCI6MTY4NTUyNjg0OH0.xGJEEeciY16MYDUb2fLOdsrD7Q8Rl0DbdxUTsqIeNIg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"infoType\":\"646ddf1f2f4f449480e133ab\",\r\n    \"question\": \"hello sir\",\r\n    \"infoTypeId\":{\r\n        \"_id\": \"646ddf1f2f4f449480e133ab\",\r\n        \"infoType\": \"button\",\r\n        \"__v\": 0\r\n    },\r\n    \"answer\":{\r\n        \"text\":\"\",\r\n        \"link\":\"\",\r\n        \"filename\":\"\"\r\n    },\r\n \"buttons\":{\r\n        \"responsetext\":\"mera name\" ,\r\n        \"buttonslist\": [\r\n            {\r\n                \"title\":\"list one\"\r\n            },\r\n             {\r\n                \"title\":\"list two\"\r\n            }\r\n        ]\r\n    },\r\n    \"list\":{\r\n        \"responsetext\":\"\" ,\r\n        \"buttonslist\": [\r\n            {\r\n                \"title\":\"\",\r\n                \"description\":\"\"\r\n            },\r\n             {\r\n                \"title\":\"\",\r\n                \"description\":\"\"\r\n            }\r\n        ]\r\n    }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5656/addinfo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5656",
+							"path": [
+								"addinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all information",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5656/addinfo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5656",
+							"path": [
+								"addinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all information by Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5656/addinfo/info/646e0e6157bd514ed2385d99",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5656",
+							"path": [
+								"addinfo",
+								"info",
+								"646e0e6157bd514ed2385d99"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"manoj kumar\",\r\n    \"email\":\"manojgum11@gmail.com\",\r\n    \"passwordHash\":\"manojgum\",\r\n    \"phone\":7909012986\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5656/users/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5656",
+							"path": [
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"manojgum@gmail.com\",\r\n    \"passwordHash\":\"manojgum\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5656/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5656",
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
